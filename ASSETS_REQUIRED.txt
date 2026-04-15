@@ -1,0 +1,18 @@
+﻿# Required Graphic Assets (Create These Before Submission)
+
+1) icon-128.png
+- Size: 128x128
+- Format: PNG
+
+2) promo-small-440x280.png
+- Size: 440x280
+- Format: PNG/JPEG
+
+3) screenshot-1-1280x800.png (minimum one screenshot required)
+- Preferred: 1280x800
+- Alternative: 640x400
+- Full bleed, square corners, no padding
+
+Optional
+- promo-marquee-1400x560.png
+- Additional screenshots (up to 5 total)

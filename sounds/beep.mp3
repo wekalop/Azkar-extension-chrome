@@ -1,0 +1,2 @@
+﻿This is a placeholder audio file. Replace with a short beep MP3 if needed.
+The extension automatically falls back to Web Audio oscillator beep if this file cannot play.

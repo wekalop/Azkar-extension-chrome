@@ -1,0 +1,52 @@
+﻿{
+  "manifest_version": 3,
+  "name": "AzkarV1",
+  "version": "1.0.0",
+  "description": "Recurring Azkar popups and live prayer time widget with GPS support.",
+  "permissions": [
+    "storage",
+    "alarms",
+    "geolocation"
+  ],
+  "host_permissions": [
+    "https://api.aladhan.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "AzkarV1 Settings",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "azkar.json",
+        "sounds/beep.mp3"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ], 
+  "icons": {
+  "16": "icons/icon16.png",
+  "48": "icons/icon48.png",
+  "128": "icons/icon128.png"
+}
+}

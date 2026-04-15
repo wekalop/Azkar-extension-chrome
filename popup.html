@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AzkarV1 Settings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="azkarv1-popup-page">
+    <main class="azkarv1-settings-card">
+      <h1>AzkarV1</h1>
+      <p class="azkarv1-settings-subtitle">اعدادات الاذكار والتنبيهات</p>
+
+      <label class="azkarv1-setting-row">
+        <span>تفعيل نافذة الاذكار</span>
+        <input id="azkarEnabled" type="checkbox" />
+      </label>
+
+      <label class="azkarv1-setting-row">
+        <span>الفاصل الزمني للاذكار (دقيقة)</span>
+        <input id="azkarIntervalMinutes" type="number" min="1" max="60" />
+      </label>
+
+      <label class="azkarv1-setting-row">
+        <span>تفعيل صوت تنبيه الصلاة</span>
+        <input id="prayerSoundEnabled" type="checkbox" />
+      </label>
+
+      <section class="azkarv1-actions-block">
+        <button id="resetWidgetPosition" type="button">اعادة ضبط مكان الودجت</button>
+        <button id="requestGps" type="button">اعادة طلب GPS</button>
+      </section>
+
+      <section class="azkarv1-manual-location">
+        <h2>الموقع اليدوي (Fallback)</h2>
+        <label class="azkarv1-setting-row">
+          <span>المدينة</span>
+          <input id="manualCity" type="text" placeholder="Cairo" />
+        </label>
+        <label class="azkarv1-setting-row">
+          <span>الدولة</span>
+          <input id="manualCountry" type="text" placeholder="Egypt" />
+        </label>
+        <button id="saveManualLocation" type="button">حفظ المدينة والدولة</button>
+      </section>
+
+      <p id="statusMessage" class="azkarv1-status-message"></p>
+      <p id="locationInfo" class="azkarv1-location-info"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
